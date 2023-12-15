@@ -108,10 +108,10 @@ public class Program {
                     }
                 }
                 case 4 -> {
-                    System.out.println("Nhập mã sách cần tìm");
+                    System.out.println("Nhập tên sách cần tìm");
                     String search = sc.nextLine();
                     for (Book srh : list) {
-                        if (srh.getBookID().equals(search)) {
+                        if (srh.getBookName().equals(search)) {
                             srh.displayData();
                             break;
                         }
